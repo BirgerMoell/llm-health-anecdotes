@@ -21,6 +21,11 @@
   ],
   "related_identifiers": [
     {
+      "identifier": "10.5281/zenodo.19865926",
+      "relation": "isIdenticalTo",
+      "scheme": "doi"
+    },
+    {
       "identifier": "https://github.com/BirgerMoell/llm-health-anecdotes",
       "relation": "isSupplementTo",
       "scheme": "url"

@@ -11,6 +11,7 @@ The project focuses on anecdotes as **behavioral and interpretive data**: not pr
 
 - [PDF paper](paper_pdf/the_plural_of_anecdote_is_data.pdf)
 - [Manuscript draft](manuscript_draft.md)
+- [DOI: 10.5281/zenodo.19865926](https://doi.org/10.5281/zenodo.19865926)
 - [GitHub Pages site](https://birgermoell.github.io/llm-health-anecdotes/)
 
 ## Repository Contents
@@ -58,4 +59,4 @@ The corpus is exploratory, self-selected, English-heavy, and platform-dependent.
 
 ## Citation
 
-Moëll B. *The Plural of Anecdote Is Data: How Patients Describe Using Large Language Models for Health*. Exploratory qualitative evidence map. 2026. Available from: https://github.com/BirgerMoell/llm-health-anecdotes
+Moëll B. *The Plural of Anecdote Is Data: How Patients Describe Using Large Language Models for Health*. Exploratory qualitative evidence map. 2026. doi: [10.5281/zenodo.19865926](https://doi.org/10.5281/zenodo.19865926)
