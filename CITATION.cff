@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: "The Plural of Anecdote Is Data: How Patients Describe Using Large Language Models for Health"
+message: "If you use this corpus, paper, figures, or repository, please cite it as below."
+type: dataset
+authors:
+  - family-names: "Moëll"
+    given-names: "Birger"
+year: 2026
+date-released: 2026-04-28
+repository-code: "https://github.com/birgermoell/llm-health-anecdotes"
+abstract: "An exploratory qualitative evidence map of public online anecdotes describing patient and caregiver use of large language models for health-related sensemaking, support, care navigation, behavior change, and safety failures."
+keywords:
+  - large language models
+  - ChatGPT
+  - patient narratives
+  - digital health
+  - qualitative research
+  - anecdotal evidence
+  - patient safety
+license: CC-BY-4.0
+
