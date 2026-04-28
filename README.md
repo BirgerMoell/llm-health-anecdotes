@@ -58,5 +58,4 @@ The corpus is exploratory, self-selected, English-heavy, and platform-dependent.
 
 ## Citation
 
-Moëll B. *The Plural of Anecdote Is Data: How Patients Describe Using Large Language Models for Health*. Exploratory qualitative evidence map. 2026. Available from: https://github.com/birgermoell/llm-health-anecdotes
-
+Moëll B. *The Plural of Anecdote Is Data: How Patients Describe Using Large Language Models for Health*. Exploratory qualitative evidence map. 2026. Available from: https://github.com/BirgerMoell/llm-health-anecdotes

@@ -7,7 +7,7 @@ authors:
     given-names: "Birger"
 year: 2026
 date-released: 2026-04-28
-repository-code: "https://github.com/birgermoell/llm-health-anecdotes"
+repository-code: "https://github.com/BirgerMoell/llm-health-anecdotes"
 abstract: "An exploratory qualitative evidence map of public online anecdotes describing patient and caregiver use of large language models for health-related sensemaking, support, care navigation, behavior change, and safety failures."
 keywords:
   - large language models
@@ -18,4 +18,3 @@ keywords:
   - anecdotal evidence
   - patient safety
 license: CC-BY-4.0
-

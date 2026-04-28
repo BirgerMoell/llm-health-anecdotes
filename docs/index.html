@@ -42,6 +42,11 @@
       margin: 0 auto;
     }
 
+    .figure-wrap {
+      width: min(1500px, calc(100vw - 32px));
+      margin: 0 auto;
+    }
+
     header {
       border-bottom: 1px solid var(--line);
       background: rgba(255, 253, 248, 0.92);
@@ -187,10 +192,26 @@
       margin-top: 28px;
     }
 
+    .figure-stack {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 42px;
+      margin-top: 34px;
+    }
+
     figure {
       margin: 0;
       background: #ffffff;
       border: 1px solid var(--line);
+    }
+
+    .journal-figure {
+      box-shadow: 0 18px 50px rgba(31, 41, 51, 0.08);
+    }
+
+    .journal-figure a {
+      display: block;
+      background: #ffffff;
     }
 
     figure img {
@@ -204,6 +225,29 @@
       color: var(--muted);
       font-size: 14px;
       border-top: 1px solid var(--line);
+    }
+
+    .journal-figure figcaption {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: baseline;
+      padding: 17px 20px 19px;
+      font-size: 15px;
+    }
+
+    .journal-figure figcaption strong {
+      color: var(--ink);
+      font-weight: 800;
+    }
+
+    .open-full {
+      flex: 0 0 auto;
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      text-decoration: none;
     }
 
     .themes {
@@ -272,6 +316,15 @@
         grid-template-columns: 1fr;
       }
 
+      .journal-figure figcaption {
+        display: block;
+      }
+
+      .open-full {
+        display: inline-block;
+        margin-top: 10px;
+      }
+
       .hero {
         padding-top: 46px;
       }
@@ -286,7 +339,7 @@
         <a href="#figures">Figures</a>
         <a href="#data">Data</a>
         <a href="#citation">Citation</a>
-        <a href="https://github.com/birgermoell/llm-health-anecdotes">GitHub</a>
+        <a href="https://github.com/BirgerMoell/llm-health-anecdotes">GitHub</a>
       </div>
     </nav>
   </header>
@@ -300,8 +353,8 @@
         <p class="author">Birger Moëll</p>
         <div class="actions">
           <a class="button primary" href="assets/the_plural_of_anecdote_is_data.pdf">Download PDF</a>
-          <a class="button" href="https://github.com/birgermoell/llm-health-anecdotes/blob/main/seed_corpus.csv">View corpus</a>
-          <a class="button" href="https://github.com/birgermoell/llm-health-anecdotes/blob/main/source_appendix.md">Source appendix</a>
+          <a class="button" href="https://github.com/BirgerMoell/llm-health-anecdotes/blob/main/seed_corpus.csv">View corpus</a>
+          <a class="button" href="https://github.com/BirgerMoell/llm-health-anecdotes/blob/main/source_appendix.md">Source appendix</a>
         </div>
       </div>
     </section>
@@ -322,23 +375,53 @@
     </section>
 
     <section id="figures">
-      <div class="wrap">
+      <div class="figure-wrap">
         <h2>Visual Story</h2>
         <p class="lead">
           The figures summarize the paper’s central argument: patients use LLMs for the work around care, and risk rises when supportive sensemaking turns into clinical authority without accountability.
         </p>
-        <div class="grid">
-          <figure>
-            <img src="assets/figures/figure_8_language_map.png" alt="Corpus-derived language map of patient work around LLM health use.">
-            <figcaption>Figure 8. The language of patient work: a word/concept map derived from corpus fields.</figcaption>
+        <div class="figure-stack">
+          <figure class="journal-figure">
+            <a href="assets/figures/figure_8_language_map@2x.png" aria-label="Open Figure 8 at full resolution">
+              <img
+                src="assets/figures/figure_8_language_map.png"
+                srcset="assets/figures/figure_8_language_map.png 2400w, assets/figures/figure_8_language_map@2x.png 4800w"
+                sizes="(max-width: 1532px) calc(100vw - 32px), 1500px"
+                alt="Corpus-derived language map of patient work around LLM health use."
+              >
+            </a>
+            <figcaption>
+              <span><strong>Figure 8.</strong> The language of patient work: a corpus-derived word/concept map.</span>
+              <a class="open-full" href="assets/figures/figure_8_language_map@2x.png">Open full resolution</a>
+            </figcaption>
           </figure>
-          <figure>
-            <img src="assets/figures/figure_9_narrative_grammar.png" alt="Narrative grammar flow model of LLM health use.">
-            <figcaption>Figure 9. The narrative grammar of LLM health use: system gaps, LLM functions, patient actions, and boundary conditions.</figcaption>
+          <figure class="journal-figure">
+            <a href="assets/figures/figure_9_narrative_grammar@2x.png" aria-label="Open Figure 9 at full resolution">
+              <img
+                src="assets/figures/figure_9_narrative_grammar.png"
+                srcset="assets/figures/figure_9_narrative_grammar.png 2400w, assets/figures/figure_9_narrative_grammar@2x.png 4800w"
+                sizes="(max-width: 1532px) calc(100vw - 32px), 1500px"
+                alt="Narrative grammar flow model of LLM health use."
+              >
+            </a>
+            <figcaption>
+              <span><strong>Figure 9.</strong> The narrative grammar of LLM health use: system gaps, model functions, patient actions, and safety boundaries.</span>
+              <a class="open-full" href="assets/figures/figure_9_narrative_grammar@2x.png">Open full resolution</a>
+            </figcaption>
           </figure>
-          <figure>
-            <img src="assets/figures/figure_6_benefit_risk_terrain.png" alt="Benefit-risk terrain for LLM health use cases.">
-            <figcaption>Figure 6. Benefit-risk terrain: where use cases require more friction, escalation, and accountability.</figcaption>
+          <figure class="journal-figure">
+            <a href="assets/figures/figure_6_benefit_risk_terrain@2x.png" aria-label="Open Figure 6 at full resolution">
+              <img
+                src="assets/figures/figure_6_benefit_risk_terrain.png"
+                srcset="assets/figures/figure_6_benefit_risk_terrain.png 2400w, assets/figures/figure_6_benefit_risk_terrain@2x.png 4800w"
+                sizes="(max-width: 1532px) calc(100vw - 32px), 1500px"
+                alt="Benefit-risk terrain for LLM health use cases."
+              >
+            </a>
+            <figcaption>
+              <span><strong>Figure 6.</strong> Benefit-risk terrain: where use cases require more friction, escalation, and accountability.</span>
+              <a class="open-full" href="assets/figures/figure_6_benefit_risk_terrain@2x.png">Open full resolution</a>
+            </figcaption>
           </figure>
         </div>
       </div>
@@ -362,7 +445,7 @@
       <div class="wrap">
         <h2>Citation</h2>
         <div class="citation">
-          Moëll B. <em>The Plural of Anecdote Is Data: How Patients Describe Using Large Language Models for Health</em>. Exploratory qualitative evidence map. 2026. Available from: https://github.com/birgermoell/llm-health-anecdotes
+          Moëll B. <em>The Plural of Anecdote Is Data: How Patients Describe Using Large Language Models for Health</em>. Exploratory qualitative evidence map. 2026. Available from: https://github.com/BirgerMoell/llm-health-anecdotes
         </div>
       </div>
     </section>
