@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://birgermoell.github.io/llm-health-anecdotes/sitemap.xml
+
